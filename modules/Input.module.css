@@ -1,0 +1,44 @@
+.container input{
+    padding:10px;
+    border: none;
+    border-bottom: 1px solid grey;
+    transition: all 150ms ease;
+    text-align: center;
+    font-size: 1.5rem;
+    outline: none;
+    width: 100%;
+    background:rgba(255, 255, 255, 0.3)
+
+}
+.input::placeholder{
+    color:transparent;
+  }
+.input:focus{
+    border-bottom:1px solid darkturquoise;
+}
+.container{
+    padding-top: 13px;
+    display: block;
+    position: relative;
+    max-width: 100px;
+}
+.container label{
+    margin-top: 1.7rem;
+    top:0;
+    left: 0;
+    display:block;
+    position:absolute;
+    color:gray;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all .1s ease-out;
+    
+}
+.container input:focus + label, .container input:not(:placeholder-shown)+label{
+    margin-top: 0;
+    font-size:0.5rem;
+    color:black;
+}
+.container input:not(:placeholder-shown){
+    border-bottom:1px solid darkturquoise;
+}

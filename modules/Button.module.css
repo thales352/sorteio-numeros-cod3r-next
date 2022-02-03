@@ -1,0 +1,20 @@
+.botao{
+    padding: 10px;
+    border: 1px solid grey;
+    margin: 20px;
+    border-radius: 20px;
+    background: white;
+    font-family: Roboto,'sans-serif';
+    font-weight: bold;
+    color: grey;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+.botao:hover{
+    background: grey;
+    color: white;
+    box-shadow: 0 0 .75rem 0 rgba(0,0,0,.4);
+}
+.botao:active{
+    box-shadow: 0 0 .25rem 0 rgba(0,0,0,.4);
+}
