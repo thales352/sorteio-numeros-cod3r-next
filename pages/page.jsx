@@ -6,7 +6,7 @@ import { Sorteio } from "../functions/Sorteio"
 
 export default function page(){
     const [valor,setValor] = useState(6)
-    const [numero,setSort] = useState(Sorteio(valor))
+    const [numero,setSort] = useState([])
 
   
     
